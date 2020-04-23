@@ -1,16 +1,18 @@
-WP4 > T4.2 > Photovoltaic production prediction
+#WP4 > T4.2 > Photovoltaic production prediction
 
-OBJECTIFS :
-Prédire la production d'une installation PV sachant :
-- l'historique de la production réelle sur les n jours précédents
-- l'historique des conditions météo (variable semi quanti ?) sur les n jours précédents
-- idéalement pour les 48 à 72 prochaines heures, avec une résolution d'une heure (optimiste)
+###MAIN GOAL :
+Predict a PV installation future production, knowing:
+- previous data on production
+- previous weather condition
 
-NB : pr se faire, on se base sur des données réelles d'une installation quelconque.
+We are using real data from PVOutput (https://pvoutput.org/) to build PV prediction models.
 
-INFOS:
-Ce dépôt reprend différents fragments présents sur divers support.
-Si possible, garder en séparé 3 éléments
-- l'acquisition des données (data_collecteur)
-- le modèle prédictif (pr le moment sous forme de benchmark)
-- l'outil de restitution de l'analyse de saisonnalité (un notebook)
+This repository gather tools for 
+- Data acquisition : extract detailed and aggregated production data from PVOutput, in DATA_COLLECTOR,
+- Data analysis : analyse the aggregated time serie trend and seasonality, in SAISO_ANALYSE,
+- Prediction : benchmark several time series forecasting methods, in MODEL_PREDICT_BENCHMARK.
+
+Run generate_deliverable.sh to generate the zip file containing WP4 final deliverable 
+(notebook, data, License, requirements and README) in the DELIVERABLE folder.
+
+Requires Python >= 3.6
