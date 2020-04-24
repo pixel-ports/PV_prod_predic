@@ -1,0 +1,18 @@
+PIXEL - Port IoT for Environmental Leverage
+Deployment Configuration for PV_production_prediction
+
+This project has received funding from the European Union’s Horizon 2020
+research and innovation programme under grant agreement No 769355.
+
+Copyright 2020 CATIE
+
+This product uses the following software with corresponding licenses:
+    pandas (https://github.com/pandas-dev/pandas) distributed under BSD License, Version 3
+    matplotlib (https://github.com/matplotlib/matplotlib) distributed under PSF License
+    statsmodel (https://github.com/statsmodels/statsmodels) distributed under BSD License, Version 3
+    seaborn (https://github.com/mwaskom/seaborn) distributed under BSD License, Version 3
+    numpy (https://github.com/numpy/numpy) distributed under BSD License, Version 3
+    scipy (https://github.com/scipy/scipy) distributed under BSD License, Version 3
+    sklearn (https://github.com/scikit-learn/scikit-learn) distributed under BSD License, Version 3
+    fbprophet (https://github.com/facebook/prophet) distributed under MIT License
+    pytorch (https://github.com/pytorch/pytorch) distributed under BSD License, Version 3
