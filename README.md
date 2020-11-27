@@ -39,7 +39,9 @@ python3 ./monitor_cpu.py "python3 inference.py ./trained.scaler ./trained.model 
 
 # Monitoring simultaneous requests performance
 python3 api.py
-python3 simultaneous_requests.py --min_processes 1 --max_processes 10 --step_processes 1
+python3 simultaneous_requests.py --min_processes 1 --max_processes 51 --step_processes 5 "/"
+python3 simultaneous_requests.py --min_processes 1 --max_processes 51 --step_processes 5 "/loaded_inference/"
+
 
 # Throughput
 time python3 training.py ./trained.scaler ./trained.model ./multiple_sequences.csv
